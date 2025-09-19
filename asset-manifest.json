@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/festival-portfolio-react-app-/static/css/main.62d30f37.css",
-    "main.js": "/festival-portfolio-react-app-/static/js/main.c032b74f.js",
+    "main.js": "/festival-portfolio-react-app-/static/js/main.b78c206f.js",
     "static/js/453.a8ab11dc.chunk.js": "/festival-portfolio-react-app-/static/js/453.a8ab11dc.chunk.js",
     "index.html": "/festival-portfolio-react-app-/index.html",
     "main.62d30f37.css.map": "/festival-portfolio-react-app-/static/css/main.62d30f37.css.map",
-    "main.c032b74f.js.map": "/festival-portfolio-react-app-/static/js/main.c032b74f.js.map",
+    "main.b78c206f.js.map": "/festival-portfolio-react-app-/static/js/main.b78c206f.js.map",
     "453.a8ab11dc.chunk.js.map": "/festival-portfolio-react-app-/static/js/453.a8ab11dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62d30f37.css",
-    "static/js/main.c032b74f.js"
+    "static/js/main.b78c206f.js"
   ]
 }
