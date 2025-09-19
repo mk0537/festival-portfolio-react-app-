@@ -1,4 +1,4 @@
-import { Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
 import MainHeader from "./components/main/MainHeader";
 import MainPage from "./components/main/MainPage";
 
@@ -11,6 +11,7 @@ import { AuthPage } from "./components/auth/AuthPages";
 function App() {
   return (
     <div>
+      <BrowserRouter basename="/festival-portfolio-react-app-">
             <MainHeader />
 
             <Routes>
@@ -38,6 +39,7 @@ function App() {
                 {/* 게시판*/}
                 <Route path='/board' element={<BoardComponent/>} />
             </Routes>
+          </BrowserRouter>
         </div>
   );
 }
