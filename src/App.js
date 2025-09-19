@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
        {/* gh-pages 배포 후 새로고침시 404 오류 및 경로 꼬임 방지 */}
-      <HashRouter>
+      <BrowserRouter basename="/festival-portfolio-react-app-">
             <MainHeader />
 
             <Routes>
@@ -40,7 +40,7 @@ function App() {
                 {/* 게시판*/}
                 <Route path='/board' element={<BoardComponent/>} />
             </Routes>
-          </HashRouter>
+          </BrowserRouter>
         </div>
   );
 }
