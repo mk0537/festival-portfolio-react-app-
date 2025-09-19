@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import MainHeader from "./components/main/MainHeader";
 import MainPage from "./components/main/MainPage";
 
@@ -11,8 +11,6 @@ import { AuthPage } from "./components/auth/AuthPages";
 function App() {
   return (
     <div>
-       {/* gh-pages 배포 후 새로고침시 404 오류 및 경로 꼬임 방지 */}
-      <BrowserRouter basename="/festival-portfolio-react-app-">
             <MainHeader />
 
             <Routes>
@@ -40,7 +38,6 @@ function App() {
                 {/* 게시판*/}
                 <Route path='/board' element={<BoardComponent/>} />
             </Routes>
-          </BrowserRouter>
         </div>
   );
 }
