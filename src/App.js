@@ -11,7 +11,8 @@ import { AuthPage } from "./components/auth/AuthPages";
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/festival-portfolio-react-app-">
+       {/* gh-pages 배포 후 새로고침시 404 오류 및 경로 꼬임 방지 */}
+      <BrowserRouter basename="/festival-portfolio-react-app-/">
             <MainHeader />
 
             <Routes>
@@ -21,7 +22,7 @@ function App() {
                 {/* AI 일정 추천 */}
                 <Route path="/ai-test" element={''} />
 
-                {/* 공개 페이지 */}
+                {/* 한눈에 보기 페이지 */}
                 <Route path="/overview" element={''} />
 
                 {/* 상세 페이지 */}
