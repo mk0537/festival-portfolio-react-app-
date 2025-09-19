@@ -90,7 +90,10 @@ export const AuthPage = () => {
                     ) : (
                         <div className="BCactiveVideo" onClick={handleVideo2Click}>
                             <div className="BCvideoPlayer">
-                                <video autoPlay loop muted className='BCvideoPreview' src='media/id_find.mp4' alt="ID/Password Find Video" />
+                                <video 
+                                    autoPlay loop muted className='BCvideoPreview' 
+                                    src={`${process.env.PUBLIC_URL}/media/id_find.mp4`}
+                                    alt="ID/Password Find Video" />
                             </div>
                         </div>
                     )}

@@ -59,7 +59,11 @@ export const AdminPage = () => {
                     ) : (
                         <div className="BCactiveVideo" onClick={handleVideoClick}>
                             <div className="BCvideoPlayer">
-                                <video autoPlay loop muted className='BCvideoPreview' src='media/admin.mp4' alt="Video Preview" />
+                                <video 
+                                    autoPlay loop muted className='BCvideoPreview' 
+                                    src={`${process.env.PUBLIC_URL}/media/admin.mp4`} 
+                                    alt="Video Preview"
+                                />
                             </div>
                         </div>
                     )}

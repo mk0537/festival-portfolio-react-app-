@@ -53,7 +53,11 @@ const BoardComponent = () => {
                     ) : (
                         <div className="BCactiveVideo" onClick={handleVideoClick}>
                             <div className="BCvideoPlayer">
-                                <video autoPlay loop muted className='BCvideoPreview' src='media/board.mp4' alt="Video Preview" />
+                                <video 
+                                    autoPlay loop muted className='BCvideoPreview' 
+                                    src={`${process.env.PUBLIC_URL}/media/board.mp4`}
+                                    alt="Video Preview"
+                                />
                             </div>
                         </div>
                     )}
