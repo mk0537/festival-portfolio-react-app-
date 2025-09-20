@@ -42,36 +42,10 @@ export default function MainHeader() {
             </div>
 
             {/* 오른쪽 - 인증/모바일 토글 */}
-            {/* <div className="header-right">
-                <div className="auth-actions">
-                    {isAuthenticated ? (
-                        <>
-                            <span className="username">{username}님</span>
-                            <button
-                                className="btn-logout"
-                                type="button"
-                                onClick={() => {
-                                    logout();   // 🔹 바로 AuthContext의 logout 실행
-                                    closeMenu();
-                                }}
-                            >
-                                로그아웃
-                            </button>
-                        </>
-                    ) : (
-                        <>
-                            <Link to="/login" className="nav-item" onClick={closeMenu}>
-                                로그인
-                            </Link>
-                            <Link to="/register" className="nav-item" onClick={closeMenu}>
-                                회원가입
-                            </Link>
-                        </>
-                    )}
-                </div>
+            <div className="header-right">
 
-                {/* 모바일 햄버거 버튼 */}
-            {/* <button
+            {/* 모바일 햄버거 버튼 */}
+            <button
                     className="menu-toggle"
                     type="button"
                     aria-expanded={menuOpen}
@@ -79,40 +53,18 @@ export default function MainHeader() {
                 >
                     {menuOpen ? "✖" : "☰"}
                 </button>
-            </div>  */}
+            </div> 
 
             {/* 모바일 드롭다운 */}
-            {/* {menuOpen && (
+            {menuOpen && (
                 <div className="mobile-menu" role="menu">
                     <Link to="/overview" onClick={closeMenu}>🗺️ 한눈에 보기</Link>
                     <Link to="/board" onClick={closeMenu}>📝 게시판</Link>
-                    {isAuthenticated && !isAdmin && (
-                        <Link to="/mypage" onClick={closeMenu}>👤 마이페이지</Link>
-                    )}
-                    {isAuthenticated && isAdmin && (
-                        <Link to="/admin" onClick={closeMenu}>🛠️ 관리자</Link>
-                    )}
+                    <Link to="/mypage" onClick={closeMenu}>👤 마이페이지</Link>
+                    <Link to="/admin" onClick={closeMenu}>🛠️ 관리자</Link>
                     <Link to="/ai-test" onClick={closeMenu}>🤖 AI 테스트</Link>
-
-                    {isAuthenticated ? (
-                        <button
-                            className="mobile-logout"
-                            type="button"
-                            onClick={() => {
-                                logout();   // 🔹 모바일 메뉴에서도 로그아웃
-                                closeMenu();
-                            }}
-                        >
-                            🚪 로그아웃
-                        </button>
-                    ) : (
-                        <>
-                            <Link to="/login" onClick={closeMenu}>🔑 로그인</Link>
-                            <Link to="/register" onClick={closeMenu}>✍️ 회원가입</Link>
-                        </>
-                    )}
                 </div>
-            )} */}
+            )}
         </header>
     );
 }

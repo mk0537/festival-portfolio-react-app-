@@ -7,6 +7,9 @@ import BoardComponent from "./components/board/BoardComponent";
 import MyPage from "./user/MyPage";
 import { AdminPage } from "./components/auth/AdminPage";
 import { AuthPage } from "./components/auth/AuthPages";
+import AI from "./components/ai/AI";
+import Overview from "./components/overview/Overview";
+import DetailPage from "./components/detail/DetailPage";
 
 function App() {
   return (
@@ -18,13 +21,13 @@ function App() {
                 <Route path="/" element={<MainPage />} />
 
                 {/* AI 일정 추천 */}
-                <Route path="/ai-test" element={''} />
+                <Route path="/ai-test" element={<AI />} />
 
                 {/* 한눈에 보기 페이지 */}
-                <Route path="/overview" element={''} />
+                <Route path="/overview" element={<Overview />} />
 
                 {/* 상세 페이지 */}
-                <Route path="/festival/:id" element={''} />
+                <Route path="/festival/:id" element={<DetailPage />} />
 
                 {/* 로그인-회원가입-회원가입 */}
                 <Route path="/register" element={<AuthPage/>} />
