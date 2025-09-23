@@ -63,6 +63,7 @@ export default function MainHeader() {
                     <Link to="/mypage" onClick={closeMenu}>👤 마이페이지</Link>
                     <Link to="/admin" onClick={closeMenu}>🛠️ 관리자</Link>
                     <Link to="/ai-test" onClick={closeMenu}>🤖 AI 테스트</Link>
+                    <Link to="/register" onClick={closeMenu}>인증</Link>
                 </div>
             )}
         </header>

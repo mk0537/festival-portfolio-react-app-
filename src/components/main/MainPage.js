@@ -62,7 +62,7 @@ const MainPage = () => {
                                 <Play size={60} fill="white" />
                             </div>
                             <div className="BCvideoOverlay">
-                                <h2>전국 축제를 한눈에</h2>
+                                <h2>전국 축제 정보 웹 서비스</h2>
                                 <p>최신순·인기순 리스트, 맞춤 검색, 좋아요 기능까지 담은 축제 정보 플랫폼</p>
                             </div>
                         </div>
